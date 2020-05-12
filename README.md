@@ -141,4 +141,6 @@ Select Method “​ **DELETE** ​”.
 
 
 
-
+```
+To read more detail information with pictures read other README.pdf file
+```
