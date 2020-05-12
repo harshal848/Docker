@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "398a854e-752e-4582-81ee-88d8a42562e7",
+		"name": "crud-api collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/api/product/create.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": \"18222\",\n    \"Name\": \"Sumit Pawar\",\n    \"Age\": \"23\",\n    \"Department\": \"Mathematics\",\n    \"Subjects\": \"Data Mining, Computer Networks, Web Technology, Operation Research\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/product/create.php\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"product",
+						"create.php\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\thttp://localhost/api/product/read.php\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/product/read.php\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"product",
+						"read.php\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/product/update.php\n",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": \"18222\",\n    \"Name\": \"Manoj Popalghat\",\n    \"Age\": \"24\",\n    \"Department\": \"Mathematics\",\n    \"Subjects\": \"Devops, Web Technology, Operation Research\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost/api/product/update.php\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"product",
+						"update.php\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/product/search.php?s=Devops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/product/search.php?s=Devops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"product",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "Devops"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\thttp://localhost/api/product/read_one.php?Id=18221\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/product/read_one.php?Id=18221\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"product",
+						"read_one.php"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "18221\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\thttp://localhost/api/product/delete.php\n",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\" : \"18222\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/product/delete.php\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"product",
+						"delete.php\n"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
