@@ -2,7 +2,7 @@
 
     session_start();
 
-    include_once 'config/database.php';
+    include_once 'database.php';
 
     //Initialising Variables
     $Id = 0;
