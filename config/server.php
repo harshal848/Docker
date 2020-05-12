@@ -29,7 +29,7 @@
             $_SESSION['msg'] =  "Record is successfully saved! ";
         }
 
-        header('location: index.php'); // Redirected to index page after inserting data
+        header('location: ../index.php'); // Redirected to index page after inserting data
     }
 
     //update records
@@ -47,7 +47,7 @@
 		else {
 			$_SESSION['msg'] = "Record could not be updated, <br> Error" . $sql . "<br>" . mysqli_error($link);
 		}
-        header('location: index.php'); // Redirected to index page after inserting data
+        header('location: ../index.php'); // Redirected to index page after inserting data
     }
 
     //delete records
@@ -56,7 +56,7 @@
 
         mysqli_query($link, "DELETE FROM Students WHERE Id='$Id' ");
         $_SESSION['msg'] = "Record is successfully deleted!"; 
-        header('location: index.php');
+        header('location: ../index.php');
     }
 
 ?>
