@@ -1,4 +1,4 @@
-<?php  include('server.php');
+<?php  include('config/server.php');
 
 // fetch the record to be updated
 if (isset($_GET['edit'])) {
@@ -19,7 +19,7 @@ if (isset($_GET['edit'])) {
 <html>
 <head>
 	<title>CRUD Operations</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="config/style.css">
 
 </head>
 
@@ -65,7 +65,7 @@ if (isset($_GET['edit'])) {
                         <a class="edit_btn" href = "index.php?edit=<?php echo $row['Id']; ?>">Edit</a>
                     </td>
                     <td>
-                        <a class="del_btn" href = "server.php?del=<?php echo $row['Id']; ?>">Delete</a>
+                        <a class="del_btn" href = "config/server.php?del=<?php echo $row['Id']; ?>">Delete</a>
                     </td>
                 </tr>
             <?php } ?>
@@ -73,7 +73,7 @@ if (isset($_GET['edit'])) {
         </tbody>
     </table>
 
-    <form  method="post" action="server.php" >
+    <form  method="post" action="config/server.php" >
         <div class="input-group">
             <label>Id</label>
             <input type="number" name="Id" value = "<?php echo $Id; ?>">
