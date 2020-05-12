@@ -19,7 +19,7 @@ if (isset($_GET['edit'])) {
 <html>
 <head>
 	<title>CRUD Operations</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="config/style.css">
 
 </head>
 
