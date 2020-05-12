@@ -23,7 +23,7 @@ RUN echo "export PATH=\$PATH:/opt/lampp/bin/" >> /root/.bashrc
 
 RUN echo "export TERM=dumb" >> /root/.bashrc
 
-ADD httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf
+ADD config/httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf
 
 ADD . /opt/lampp/htdocs/api/
 
