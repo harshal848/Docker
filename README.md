@@ -3,7 +3,7 @@ Dockerfile, crud microservices using PHP and MySql
 
 
 **Implement microservice (CRUD Operation) :**
-In this assignment I used PHP & MySql to create API’s for CRUD operations.
+I used PHP & MySql to create API’s for CRUD operations.
 I created database “USERS”
 and created a table “Students”.
 
