@@ -1,1 +1,1 @@
-In this folder we created six and api products
+In this folder we created six api products
